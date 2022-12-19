@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 3rem;
+}
+/* .hero {
+  background: #23424a;
+  width: 100%;
+  height: 659px;
+}
+.container {
+  padding: 148px 608px 122px;
+  color: white;
+}
+
+p {
+  padding-bottom: 50px;
+}
+
+.btn {
+  width: 285px;
+  height: 63px;
+  border-radius: 31.5px;
+  border-color: #38cfd9;
+  background: #38cfd9;
+} */
+.container {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero {
+  width: 80%;
+  /* 퍼센트보다는 실제 값 넣는 게 좋음 */
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 2px solid yellow;
+}
+
+.hero__text {
+  width: 60%;
+  border: 1px solid pink;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
