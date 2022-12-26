@@ -1,5 +1,11 @@
 @use '../util' as u;
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   // display: grid;
   // justify-content: center;
