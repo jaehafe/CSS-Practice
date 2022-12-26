@@ -11,6 +11,7 @@
   width: min(100% - 40px, 1000px);
   margin: 0 auto;
   // margin-inline: auto;
+  font-size: 2rem;
 
   @include u.breakpoint(large) {
     grid-template-columns: 2fr 1fr;
