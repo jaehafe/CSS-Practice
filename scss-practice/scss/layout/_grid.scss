@@ -1,5 +1,10 @@
 @use '../util' as u;
 
+// placeholder selectors
+%widget {
+  padding: u.rem(16);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -52,6 +57,18 @@
 
     @include u.breakpoint-down(small) {
       text-align: right;
+    }
+  }
+
+  &__widget {
+    &--magenta {
+      @extend %widget;
+      background-color: hsl(300, 19%, 79%);
+    }
+    &--green {
+      @extend %widget;
+      // @extend .grid__widget;
+      background-color: rgb(12, 225, 12);
     }
   }
 }
