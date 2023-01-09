@@ -7,18 +7,17 @@ const BASE_URL = 'https://api.stackexchange.com';
 const PATH_URL = '2.3/questions?order=desc&sort=activity&site=stackoverflow';
 
 const fetchQuestions = async () => {
-  $('.questionsDOM').textContent = `<div class='loading'></div>`;
+  $('.questionsDOM').innerHTML = `<div class='loading'></div>`;
   try {
     const res = await fetch(`${BASE_URL}/${PATH_URL}`);
     const { items } = await res.json();
-    console.log(items);
+    // console.log(items);
     return items;
   } catch (err) {
     console.log(err);
     $('.questionsDOM').innerHTML = '<p class="error">there was an error</p>';
   }
 };
-fetchQuestions();
 
 const showQuestions = (list) => {
   const quesList = list
@@ -111,7 +110,7 @@ const showQuestions = (list) => {
 
 const start = async () => {
   const data = await fetchQuestions();
-  console.log(data);
+  // console.log(data);
   showQuestions(data);
 };
 start();
